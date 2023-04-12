@@ -1,6 +1,5 @@
 const UserRepository = require("../data/user.repository");
 const User = require("../models/user");
-const Address = require("../models/address");
 const bcrypt = require("bcrypt");
 const { errorMessages } = require("../utils/messages");
 const CustomError = require("../utils/custom-error");
@@ -103,5 +102,3 @@ exports.updateProfile = async (userId, fullName, email, phoneNumber) => {
     throw err;
   }
 };
-
-
